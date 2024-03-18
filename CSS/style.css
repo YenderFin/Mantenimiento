@@ -7,6 +7,21 @@
     font-family: 'Poppins', sans-serif ;
 }
 
+:root{
+    --color_text-primary: #0c181c;
+    --color_text-secundary: #0c181c;
+    --color_text-tertiary: #b93af8;
+    --main_color-primary: #4040fb;
+    --main_color-secundary: #3f8880;
+    --background-color: #ebe6ea;
+    --lowText_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px #8b8b8b;
+}
+
 header{
     width: 100%;
     height: 100px;
@@ -52,29 +67,29 @@ header{
 }
 
 .menu nav ul li a{
-    color: black;
-    font-size: 16px;
+    color: var(--color_text-secundary);
+    font-size: var(--lowText_font_size);
     position: relative;
 }
 
 .menu nav ul li a:hover{
-    color: blue;
+    color: var(--color_text-primary);
 }
 
 .btn_quote{
     display: block;
     padding: 2px 10px;
-    border: 2px solid rgb(8, 64, 218);
+    border: 2px var(--color_text-primary);
     border-radius: 8px;
     font-weight: 600;
-    color: rebeccapurple;
+    color: var(--color_text-tertiary);
     margin: 0px 20px;
     transition: all 1000ms;
 }
 
 .btn_quote:hover{
     color: white;
-    background: rebeccapurple;
+    background: var(--color_text-primary);
 }
 
 .menu .SocialMedia{
@@ -93,6 +108,69 @@ header{
 
 .SocialMedia img{
     position: relative;
+}
+
+.container_cover{
+    padding-right: 500px;
+    padding-left: 1px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--background-color);
+}
+.cover{
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cover{
+    width: 100%;
+    padding-right: 150px;
+
+}
+
+.image_cover{
+    position: 100%;
+    padding-left: 20px;
+}
+.text_cover h1{
+    font-size: 50px;
+    color: var(--color_text-secundary);
+}
+.text_cover p{
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+.btn_text{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main_color-secundary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn_text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: var(--color_text-tertiary);
+}
+.image_cover{
+    width: 100%;
+
+}
+.image_cover img{
+    width: 550px;
 }
 
 
