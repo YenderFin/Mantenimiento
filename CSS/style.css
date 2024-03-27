@@ -24,7 +24,7 @@
 
 header{
     width: 100%;
-    height: 150px;
+    height: 100px;
     position: fixed;
     z-index: 100;
 }
@@ -40,13 +40,11 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    position: 1px;
+    position: relative;
     z-index: 1;
 }
 .logo img{
-    position: fixed;
-    width: 110px;
-    height: 80px;
+    width: 100px;
 }
 .menu{
     display: flex;
@@ -106,19 +104,17 @@ header{
 }
 
 
-.SocialMedia img{
-    position: relative;
-}
+
 
 .container_cover{
     padding-right: 500px;
-    padding-left: 1px;
+    padding-left: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--background-color);
 }
 .cover{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
     margin-top: 100px;
     display: flex;
@@ -132,21 +128,16 @@ header{
 
 }
 
-.image_cover{
-    position: 100%;
-    padding-left: 20px;
-}
 .text_cover h1{
+    padding-top: 1px;
     font-size: 50px;
     color: var(--color_text-secundary);
-    margin-bottom: 100px;
-    margin-left: 220px;
+
 }
 .text_cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-tertiary);
-    margin-left: 100px;
 }
 .btn_text{
     display: block;
@@ -173,10 +164,9 @@ header{
 
 }
 .image_cover img{
-    width: 620px;
-    height: 500px;
-    margin-left: 180px;
-    margin-bottom: 100px;
+    width: 600px;
+    margin-left:  80px;
+    padding-left: 100px;
 }
 
 
