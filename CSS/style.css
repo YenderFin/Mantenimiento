@@ -9,11 +9,11 @@
 
 :root{
     --color_text-primary: #0c181c;
-    --color_text-secundary: #0c181c;
-    --color_text-tertiary: #b93af8;
-    --main_color-primary: #4040fb;
+    --color_text-secundary: #0303b5;
+    --color_text-tertiary: rgb(74, 31, 194);
+    --main_color-primary: white;
     --main_color-secundary: #3f8880;
-    --background-color: #ebe6ea;
+    --background-color: #abb0f5;
     --lowText_font_size: 16px;
     --text_size_title: 40px;
     --text_title_card: 24px;
@@ -24,7 +24,7 @@
 
 header{
     width: 100%;
-    height: 100px;
+    height: 150px;
     position: fixed;
     z-index: 100;
 }
@@ -67,20 +67,20 @@ header{
 }
 
 .menu nav ul li a{
-    color: var(--color_text-secundary);
+    color: var(--color_text-primary);
     font-size: var(--lowText_font_size);
     position: relative;
 }
 
 .menu nav ul li a:hover{
-    color: var(--color_text-primary);
+    color: var(--color_text-secundary);
 }
 
 .btn_quote{
     display: block;
     padding: 2px 10px;
-    border: 2px var(--color_text-primary);
-    border-radius: 8px;
+    border: 2px solid var(--color_text-tertiary);
+    border-radius: 10px;
     font-weight: 600;
     color: var(--color_text-tertiary);
     margin: 0px 20px;
@@ -139,11 +139,14 @@ header{
 .text_cover h1{
     font-size: 50px;
     color: var(--color_text-secundary);
+    margin-bottom: 100px;
+    margin-left: 220px;
 }
 .text_cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-tertiary);
+    margin-left: 100px;
 }
 .btn_text{
     display: block;
@@ -152,7 +155,7 @@ header{
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background: var(--main_color-secundary);
+    background: var(--color_text-primary);
     color: white;
     border-radius: 8px;
     border: 2px solid transparent;
@@ -163,14 +166,17 @@ header{
 .btn_text:hover{
     background: transparent;
     border: 2px solid var(--main_color-primary);
-    color: var(--color_text-tertiary);
+    color: white;
 }
 .image_cover{
     width: 100%;
 
 }
 .image_cover img{
-    width: 550px;
+    width: 620px;
+    height: 500px;
+    margin-left: 180px;
+    margin-bottom: 100px;
 }
 
 
