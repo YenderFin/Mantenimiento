@@ -259,6 +259,7 @@ header{
 }
 .text_coverThree{
     justify-content: center;
+    margin-left: 100px;
 }
 .text_coverThree h1{
    
@@ -277,24 +278,19 @@ header{
     margin-right: 100px;
 }
 .image_coverThree {
-    margin-top: 5%;
+    margin-top: 10px;
     display: flex;
-    justify-content: center center;
-    align-items: center;
+
     
 }
-.image_coverThree .image_one{
-    padding-right: 1px;
-}
-.image_coverThree .image_two img{
-    height: 40%;
-    width: 100%;
-    padding-right:100px ;
-}
+
+
 .image_coverThree .image_one img{
-    height: 40%;
-    width: 100%;
-    padding-left: 100px;
+    height: 400px;
+    width: 700px;
+    margin-left: 150PX;
+    align-items: center center;
+    justify-content: center center;
 
 }
 .container_four{
