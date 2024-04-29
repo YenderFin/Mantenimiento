@@ -246,6 +246,7 @@ header{
 
 /*End Estilos Generales Cards*/
 .coverThree{
+    transition: all 300ms;
     display: flex;
     height: 90vh;
     margin-top: 100px;
@@ -512,6 +513,7 @@ header{
 
 .container__box-cardPrimary1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
 
@@ -519,21 +521,9 @@ header{
     
 }
 
-.box__card-primary1{
-    max-width: 350px;
-    padding: 60px 40px;
-    border: 1px solid #e6e6e6;
-    border-radius: 20px;
-    margin: 14px;
-    text-align: center;
-    background-image: url(/IMG/g);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-    width: 50vh;
-    border: transparent;
-
+.box__card-primary2:hover{
+    transform: scale(1.1);
+    
 }
 
 .box__card-primary2{
@@ -562,7 +552,14 @@ header{
 }
 
 
+.box__card-primary3:hover{
+    transform: scale(1.1);
+    
+}
+
+
 .box__card-primary3{
+    transition: all 300ms;
     max-width: 350px;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
@@ -577,7 +574,14 @@ header{
 }
 
 
+.box__card-primary4:hover{
+    transform: scale(1.1);
+    
+}
+
+
 .box__card-primary4{
+    transition: all 300ms;
     max-width: 350px;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
@@ -594,7 +598,7 @@ header{
 
 .box__card-primary5{
     max-width: 350px;
-    padding: 1px 80px;
+    padding: 1px 1px;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     height: 50vh;
@@ -608,6 +612,7 @@ header{
 
 .box__card-primary3 p{
     margin-top: 20px;
+    margin-left: 50px;
 }
 
 .contenedor-galeria{
