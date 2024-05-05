@@ -21,7 +21,8 @@
     --text_title_cardv2: 20px;
     --text_paragraph: 16px;
     --box_shadow-primary: 0px 6px 50px -20px #d80000;
-    --icon_arrow-right: \2192
+    --icon_arrow-right: \2192;
+    --background-color-two: rgb(249, 249, 249);
 }
 
 header{
@@ -682,6 +683,82 @@ header{
     height: 50px;  /* Ajusta esto a la altura de sombra que desees */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
     border-radius: 15px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 20px;
+    gap: 10px;
+    width: 1000px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    background-color: var(--background-color-two);
+}
+
+.input-box{
+    position: relative;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    letter-spacing: 1px;
+    transition: .3s;
+
+}
+
+.input-box textarea{
+    width: 100%;
+    height: 130px;
+    letter-spacing: 1px;
+    transition: .3s;
+    padding: 10px;
+    outline: none;
+}
+.input-box > i{
+    position: absolute;
+    color: rgb(112, 110, 110);
+    top: 50% ;
+    transform: translateY(-50%);
+    right: 15px;
+    
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+    border-bottom: 3px solid rgb(170, 48, 170) ;
+}
+
+.input-box input:focus::placeholder,
+.input-box textarea:focus::placeholder{
+    color: transparent;
+}
+
+form button{
+    background: var(--background-color);
+    color: #4d3c3c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius:4px;
+}
+
+form button:hover{
+    background: rgba(0, 0, 0, 0.445);
+    color: whitesmoke;
+    transition: all 300ms;
 }
 
 
