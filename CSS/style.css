@@ -301,12 +301,13 @@ header {
 }
 
 
-.image_coverThree .image_one img {
+.image_coverThree .image_one video {
     height: 400px;
     width: 700px;
     margin-left: 150PX;
     align-items: center center;
     justify-content: center center;
+    border-radius: 50px;
 
 }
 
@@ -794,4 +795,8 @@ form button:hover {
     background: rgba(0, 0, 0, 0.445);
     color: whitesmoke;
     transition: all 300ms;
+}
+
+.mapa {
+    margin-top: 300px;
 }
