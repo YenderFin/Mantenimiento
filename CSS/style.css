@@ -141,19 +141,19 @@ header {
 }
 
 
-.text_cover h1 {
+/* .text_cover h1 {
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: 50px;
     color: var(--color_text-secundary);
 
-}
+}*/
 
 .text_cover p {
-    font-size: var(--text_paragraph);
-    margin-top: 40px;
-    color: var(--color_text-tertiary);
-}
+    margin-top: 70px;
+
+
+} 
 
 .btn_text {
     display: block;
@@ -519,10 +519,6 @@ header {
 
 }
 
-.box__card-primary2:hover {
-    transform: scale(1.1);
-
-}
 
 .box__card-primary2 {
     max-width: 350px;
@@ -531,7 +527,7 @@ header {
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
-    background-image: url(/IMG/about_us/Mauricio.PNG);
+    background-image: url(/IMG/about_us/Ana_de_Armas.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -562,7 +558,7 @@ header {
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     margin: 14px;
-    background-image: url(/IMG/about_us/jordy.PNG);
+    background-image: url(/IMG/about_us/Thomas_2.jpg);
     background-size: cover;
     height: 50vh;
     width: 50vh;
@@ -584,7 +580,7 @@ header {
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     margin: 14px;
-    background-image: url(/IMG/about_us/Angel.PNG);
+    background-image: url(/IMG/about_us/Jhon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -602,7 +598,20 @@ header {
     width: 60vh;
     border: transparent;
     text-align: center;
+    margin-right: 20px;
+    padding-left: 18px;
 
+}
+.box__card-primary6 {
+    max-width: 350px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    height: 50vh;
+    width: 60vh;
+    border: transparent;
+    text-align: center;
+    margin-left: 25px;
+    padding-left: 20px;
 
 }
 
@@ -780,7 +789,7 @@ form {
     color: transparent;
 }
 
-form button {
+.boton_formulario {
     background: var(--background-color);
     color: #4d3c3c;
     border: none;
@@ -789,14 +798,245 @@ form button {
     font-size: 1rem;
     padding: 10px;
     border-radius: 4px;
+    z-index: 1;
+    position: relative;
 }
 
-form button:hover {
+/* form button:hover {
     background: rgba(0, 0, 0, 0.445);
     color: whitesmoke;
     transition: all 300ms;
+} */
+
+
+.boton_formulario::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
 }
+  
+.boton_formulario:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.boton_formulario::before {
+    content: " ";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.445);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+
+
+.box__card-primary2 {
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+.box__card-primary3 {
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+.box__card-primary4 {
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+
 
 .mapa {
     margin-top: 300px;
 }
+
+.content {
+    position: absolute;
+    top: 5;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    width:800px;
+    overflow:hidden;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #ecf0f1;
+    
+    .content__container {
+      font-weight: 600;
+      overflow: hidden;
+      height: 50px;
+      padding: 0 40px;
+      padding-top: 7px;
+  
+      &:before {
+        content: '[';
+        left: 0;
+        height: 50px;
+       
+      }
+  
+      &:after {
+        content: ']';
+        position: absolute;
+        right: 0;
+      }
+  
+      &:after, &:before {
+        position: absolute;
+        top: 0;
+        padding-top: 10px;
+        
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+        
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+  
+      .content__container__text {
+        display: inline;
+        float: left;
+        margin: 0;
+        left: 20px;
+      }
+  
+      .content__container__list {
+        margin-top: 0;
+        padding-left: 161px;
+        text-align: left;
+        list-style: none;
+        
+        -webkit-animation-name: change;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+  
+        .content__container__item {
+          line-height:40px;
+          margin:0;
+          left: 50%;
+        }
+      }
+    }
+  }
+  
+  @-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-webkit-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  @-o-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-o-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  @-moz-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-moz-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  @keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+/*   
+  // 6 is the number of animation.
+  // Here, there are 4 lines :
+  
+  // 1 to 2
+  // 2 to 3
+  // 3 to 4
+  // 4 to 3
+  // 3 to 2
+  // 2 to 1
+  
+  // 6x + 6y = 100 (100% duration)
+  
+  // HERE : 
+  // y = 4 -> Animation between two lines
+  // x = 12.66 -> Time spent on a line
+  
+  // You can define a value and calculate the other if you want change speed or the number of lines */
