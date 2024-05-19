@@ -39,13 +39,19 @@ header {
 .container_header {
     max-width: 1200px;
     height: 100%;
-    margin: auto;
+    margin: 0 20px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 5px 0px 5px 250px;
 
 }
+.container_header .logo{
+    padding-right: 300px;
+}
+
+
+
 
 .logo {
     display: flex;
@@ -62,9 +68,15 @@ header {
     color: var(--color_text-tertiary);
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
 .menu {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 .menu nav {
@@ -110,12 +122,14 @@ header {
 
 .menu .SocialMedia {
     margin: 0px 10px;
+    display: flex;
 
 }
 
 .menu .SocialMedia a {
     margin: 0px 4px;
     text-align: center;
+    padding: 0 4px;
 }
 
 .menu .SocialMedia img {
@@ -173,6 +187,29 @@ header {
     background: transparent;
     border: 2px solid var(--main_color-primary);
     color: white;
+}
+
+.btn_text2 {
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 180px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--color_text-primary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 500ms;
+    z-index: 1;
+}
+
+.btn_text2:hover {
+    background: var(--background-color);
+    border: 2px solid purple;
+    color: black;
 }
 
 .image_cover {
@@ -254,7 +291,9 @@ header {
 }
 
 .box__card-primary img {
-    border-radius: 40px;
+    border-radius: 30%;
+    height: 100px;
+    width: 100px;
 }
 
 /*End Estilos Generales Cards*/
@@ -266,6 +305,7 @@ header {
     margin-bottom: 100px;
     align-items: center;
     background-color: rgb(249, 249, 249);
+    z-index: -1;
 
 }
 
@@ -597,7 +637,7 @@ header {
     width: 60vh;
     border: transparent;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 30px;
     padding-left: 18px;
 
 }
